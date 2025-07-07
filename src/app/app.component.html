@@ -1,1 +1,16 @@
-<lib-protheus-lib-thf></lib-protheus-lib-thf>
+<hr />
+<po-page-default [p-title]="title || 'Carregando...'">
+  <po-widget>
+    <p data-test-id="description">{{ description }}</p>
+
+    <po-button p-label="English APP FINAL" (p-click)="changeLanguage('en', 'teste')"></po-button>
+    <po-button p-label="Russo LIB DE TESTE" (p-click)="changeLanguage('ru', 'general')"></po-button>
+    <po-button p-label="Espanhol LIB DE TESTE" (p-click)="changeLanguage('es', 'general')"></po-button>
+    <po-button p-label="Português LIB DE TESTE" (p-click)="changeLanguage('pt', 'general')"></po-button>
+    <po-button p-label="English LIB DE TESTE" (p-click)="changeLanguage('en', 'general')"></po-button>
+  </po-widget>
+  <po-widget> 003: {{ literals.str0003 }} </po-widget>
+  <po-widget> Titulo: {{ literals.str0016 }} </po-widget>
+  <po-widget> Mensagem: {{ literals.str0021 }} </po-widget>
+  <po-widget> Teste: {{ literals.teste }} </po-widget>
+</po-page-default>
